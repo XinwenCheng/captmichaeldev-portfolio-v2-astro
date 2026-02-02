@@ -2,39 +2,39 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --color-paper-cream: #F9F8F3;
-  --color-soft-charcoal: #333333;
-  --color-penguin-orange: #FF5A00;
-  
-  --color-background: var(--color-paper-cream);
-  --color-text: var(--color-soft-charcoal);
-  --color-accent: var(--color-penguin-orange);
+	--color-paper-cream: #f9f8f3;
+	--color-soft-charcoal: #333333;
+	--color-penguin-orange: #ff5a00;
+
+	--color-background: var(--color-paper-cream);
+	--color-text: var(--color-soft-charcoal);
+	--color-accent: var(--color-penguin-orange);
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 /* Accessibility: Skip to content link */
 .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
 }
 
 .sr-only:focus {
-  position: fixed;
-  width: auto;
-  height: auto;
-  padding: 0.5rem 1rem;
-  margin: 0;
-  overflow: visible;
-  clip: auto;
-  white-space: normal;
+	position: fixed;
+	width: auto;
+	height: auto;
+	padding: 0.5rem 1rem;
+	margin: 0;
+	overflow: visible;
+	clip: auto;
+	white-space: normal;
 }
