@@ -10,6 +10,9 @@ interface Product {
 	tags: string[];
 	color: string;
 	status?: string;
+	schemaCategory?: string;
+	schemaFeature?: string;
+	schemaPrice?: string;
 }
 
 const products: Product[] = [
@@ -21,6 +24,9 @@ const products: Product[] = [
 		link: "https://gettargetresume.com",
 		tags: ["AI Engineering", "SaaS", "Stripe"],
 		color: "bg-blue-50",
+		schemaCategory: "BusinessApplication",
+		schemaFeature: "AI Resume Tailoring",
+		schemaPrice: "4.99",
 	},
 	{
 		title: "Sum to Reader",
@@ -31,6 +37,8 @@ const products: Product[] = [
 		tags: ["Automation", "Kindle", "Serverless"],
 		color: "bg-orange-50",
 		status: "Beta",
+		schemaCategory: "UtilitiesApplication",
+		schemaFeature: "Email-to-e-book conversion",
 	},
 	{
 		title: "ESL Fiction",
@@ -41,6 +49,7 @@ const products: Product[] = [
 		tags: ["PWA", "Education", "No-Code DB"],
 		color: "bg-green-50",
 		status: "Alpha",
+		schemaCategory: "EducationalApplication",
 	},
 ];
 ---
@@ -71,12 +80,15 @@ const products: Product[] = [
 							"@context": "https://schema.org",
 							"@type": "SoftwareApplication",
 							name: product.title,
-							applicationCategory: product.category,
+							applicationCategory: product.schemaCategory || "WebApplication",
 							description: product.description.replace(/<[^>]*>?/gm, ""),
 							operatingSystem: "Web",
+							featureList: product.schemaFeature
+								? [product.schemaFeature]
+								: undefined,
 							offers: {
 								"@type": "Offer",
-								price: "0",
+								price: product.schemaPrice || "0",
 								priceCurrency: "USD",
 							},
 						})}
