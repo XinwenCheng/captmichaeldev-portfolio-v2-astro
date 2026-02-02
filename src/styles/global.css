@@ -11,6 +11,10 @@
   --color-accent: var(--color-penguin-orange);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Accessibility: Skip to content link */
 .sr-only {
   position: absolute;
