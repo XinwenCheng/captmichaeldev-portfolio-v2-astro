@@ -1,6 +1,16 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+@theme {
+  --color-paper-cream: #F9F8F3;
+  --color-soft-charcoal: #333333;
+  --color-penguin-orange: #FF5A00;
+  
+  --color-background: var(--color-paper-cream);
+  --color-text: var(--color-soft-charcoal);
+  --color-accent: var(--color-penguin-orange);
+}
+
 /* Accessibility: Skip to content link */
 .sr-only {
   position: absolute;
