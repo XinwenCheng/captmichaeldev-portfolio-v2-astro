@@ -1,8 +1,8 @@
 {
-  "name": "astro-base",
+  "name": "@dynami-ideas/captmichaeldev-portfolio-v2-astro",
   "type": "module",
-  "version": "0.0.1",
-  "license": "MIT",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -18,26 +18,26 @@
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
     "@astrojs/react": "^4.4.2",
-    "@astrojs/sitemap": "^3.3.2",
+    "@astrojs/sitemap": "^3.7.0",
     "@iconify-json/tabler": "^1.2.26",
     "@tailwindcss/vite": "^4.1.18",
-    "astro": "^5.16.6",
+    "astro": "^5.17.1",
     "astro-icon": "^1.1.5",
-    "framer-motion": "^12.24.7",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3",
-    "sass": "^1.97.2",
+    "framer-motion": "^12.29.2",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "sass": "^1.97.3",
     "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.19",
-    "@typescript-eslint/eslint-plugin": "^7.0.0",
-    "@typescript-eslint/parser": "^7.0.0",
-    "eslint": "^8.57.0",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^8.57.1",
     "eslint-plugin-astro": "^0.32.0",
-    "eslint-plugin-react": "^7.34.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "prettier": "^3.2.5",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "prettier": "^3.8.1",
     "prettier-plugin-astro": "^0.13.0"
   }
 }
