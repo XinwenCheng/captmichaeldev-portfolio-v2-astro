@@ -59,7 +59,12 @@ const products: Product[] = [
 	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 		{
 			products.map((product) => (
-				<article class="group relative flex flex-col h-full bg-white rounded-2xl p-6 border border-soft-charcoal/5 hover:border-penguin-orange transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-1">
+				<a
+					href={product.link}
+					target="_blank"
+					rel="noopener noreferrer"
+					class="group relative flex flex-col h-full bg-white rounded-2xl p-6 border border-soft-charcoal/5 hover:border-penguin-orange transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-1 block"
+				>
 					<script
 						type="application/ld+json"
 						set:html={JSON.stringify({
@@ -86,20 +91,21 @@ const products: Product[] = [
 								{product.category}
 							</span>
 							{product.status && (
-								<span class="px-2 py-0.5 text-[10px] uppercase font-bold tracking-wider text-gray-500 bg-gray-100 rounded-full">
+								<span
+									class={`px-2 py-0.5 text-[10px] uppercase font-bold tracking-wider rounded-full ${
+										product.status === "Alpha" || product.status === "Beta"
+											? "text-gray-500 bg-gray-100"
+											: "text-penguin-orange bg-penguin-orange/10"
+									}`}
+								>
 									{product.status}
 								</span>
 							)}
 						</div>
 						<h3 class="text-xl font-bold text-soft-charcoal mt-2 mb-3">
-							<a
-								href={product.link}
-								target="_blank"
-								rel="noopener noreferrer"
-								class="before:absolute before:inset-0 focus:outline-none"
-							>
+							<span class="before:absolute before:inset-0 focus:outline-none">
 								{product.title}
-							</a>
+							</span>
 						</h3>
 						<p
 							class="text-soft-charcoal/80 text-sm leading-relaxed"
@@ -123,7 +129,7 @@ const products: Product[] = [
 							/>
 						</span>
 					</div>
-				</article>
+				</a>
 			))
 		}
 	</div>

@@ -1,5 +1,5 @@
 ---
-
+import { Image } from "astro:assets";
 ---
 
 <section
@@ -13,10 +13,12 @@
 		</div>
 
 		<div class="flex items-center gap-4 mb-2">
-			<img
+			<Image
 				src="https://unavatar.io/twitter/CaptMichaelDev"
 				alt="Michael C."
-				class="w-20 h-20 md:w-24 md:h-24 rounded-full border-2 border-paper-cream shadow-sm"
+				width={96}
+				height={96}
+				class="w-20 h-20 md:w-24 md:h-24 rounded-full border border-soft-charcoal/10 shadow-sm"
 			/>
 		</div>
 

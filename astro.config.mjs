@@ -22,16 +22,6 @@ export default defineConfig({
   ],
   vite: {
     plugins: [tailwindcss()],
-    build: {
-      cssMinify: "lightningcss",
-      minify: "terser",
-      terserOptions: {
-        compress: {
-          drop_console: true,
-          drop_debugger: true,
-        },
-      },
-    },
   },
   build: {
     inlineStylesheets: "auto",
@@ -39,7 +29,7 @@ export default defineConfig({
   },
   compressHTML: true,
   image: {
-    domains: [],
+    domains: ["unavatar.io"],
     remotePatterns: [],
   },
 });
