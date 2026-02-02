@@ -74,7 +74,7 @@ export const GET: APIRoute = async () => {
               background-color: #22c55e;
             "
           ></div>
-          $9.99 Total Revenue
+          $9.99 Total Revenue in 2026
         </div>
 
         <h1
