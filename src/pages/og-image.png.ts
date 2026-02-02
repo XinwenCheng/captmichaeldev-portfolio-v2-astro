@@ -114,7 +114,7 @@ export const GET: APIRoute = async () => {
 		</div>
 	`;
 
-	const svg = await satori(markup as any, {
+	const svg = await satori(markup as any, { // eslint-disable-line @typescript-eslint/no-explicit-any
 		width: 1200,
 		height: 630,
 		fonts: [
@@ -131,7 +131,7 @@ export const GET: APIRoute = async () => {
 	const pngData = resvg.render();
 	const pngBuffer = pngData.asPng();
 
-	return new Response(pngBuffer as any, {
+	return new Response(pngBuffer as any, { // eslint-disable-line @typescript-eslint/no-explicit-any
 		headers: {
 			"Content-Type": "image/png",
 			"Cache-Control": "public, max-age=31536000, immutable",

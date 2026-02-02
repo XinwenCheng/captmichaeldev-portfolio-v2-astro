@@ -1,5 +1,6 @@
 module.exports = {
   root: true,
+  ignorePatterns: ["dist", "node_modules"],
   env: {
     node: true,
     browser: true,
@@ -39,6 +40,10 @@ module.exports = {
       parserOptions: {
         parser: "@typescript-eslint/parser",
         extraFileExtensions: [".astro"],
+      },
+      rules: {
+        "react/no-unknown-property": "off",
+        "react/jsx-key": "off",
       },
     },
   ],
