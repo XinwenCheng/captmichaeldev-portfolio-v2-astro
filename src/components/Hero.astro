@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
 ---
 
 <section
@@ -60,8 +61,8 @@ import { Image } from "astro:assets";
 					class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-penguin-orange/10 font-medium text-penguin-orange/90"
 				>
 					<span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-					<span class="text-soft-charcoal font-black">$9.99</span> Total Revenue
-					in 2026
+					<span class="text-soft-charcoal font-black">$9.99</span> Total Revenue in
+					2026
 				</span>
 			</span>
 		</p>
@@ -79,6 +80,27 @@ import { Image } from "astro:assets";
 			</a>
 			<span>•</span>
 			<div>Transparency First</div>
+		</div>
+
+		<!-- Social Connect -->
+		<div class="pt-2 flex items-center gap-4 text-base text-soft-charcoal/60">
+			<span>Let's connect:</span>
+			<a
+				href="https://x.com/CaptMichaelDev"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="text-soft-charcoal/60 hover:text-penguin-orange transition-colors"
+				aria-label="X (Twitter)"
+			>
+				<Icon name="tabler:brand-x" class="w-5 h-5" />
+			</a>
+			<a
+				href="mailto:CaptMichaelDev@gmail.com"
+				class="text-soft-charcoal/60 hover:text-penguin-orange transition-colors"
+				aria-label="Email"
+			>
+				<Icon name="tabler:mail" class="w-5 h-5" />
+			</a>
 		</div>
 	</div>
 </section>
