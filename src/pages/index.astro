@@ -14,8 +14,13 @@ import { SITE } from "../config/site.mjs";
 	canonicalURL={SITE.url}
 >
 	<main id="main-content" role="main" class="overflow-x-hidden">
-		<Hero />
-		<ProductShowcase />
+		<!-- Hero & Solutions Grid Container -->
+		<div
+			class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 lg:gap-12 max-w-[1600px] mx-auto min-h-[100dvh] md:min-h-[95vh]"
+		>
+			<Hero />
+			<ProductShowcase />
+		</div>
 		<Principles />
 		<TechStack />
 	</main>
