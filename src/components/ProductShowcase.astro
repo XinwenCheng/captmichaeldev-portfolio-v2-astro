@@ -20,34 +20,31 @@ const products: Product[] = [
 		title: "Get Target Resume",
 		category: "Intelligent Resume Compiler",
 		description:
-			"<b>Anti-subscription</b>. Start with <b>1 Free Credit</b>. Uses <b>Advanced AI models</b> to craft perfect resumes.",
+			"Uses <b>Most Advanced AI models</b> to craft perfect resumes. <b>Anti-subscription</b>. Start with <b>Free</b>.",
 		link: "https://gettargetresume.com",
-		tags: ["AI Engineering", "SaaS", "Stripe"],
+		tags: ["Resume Tailoring", "Job Applications", "AI-Powered"],
 		color: "bg-blue-50",
 		schemaCategory: "BusinessApplication",
-		schemaFeature: "AI Resume Tailoring",
-		schemaPrice: "4.99",
 	},
 	{
 		title: "Sum to Reader",
-		category: "Efficiency Utility",
+		category: "Efficiency Reading Utility",
 		description:
-			"Fights screen fatigue by converting web articles to <b>digital book formats</b> via a <b>Headless</b>, <b>High-Efficiency</b> 'Email-to-Summary' flow.",
+			"Read news or articles on Kindle without distractions. <b>Automated Email-to-e-book</b> conversion. Start with <b>Free</b>.",
 		link: "https://sumtoreader.com",
-		tags: ["Automation", "Kindle", "Serverless"],
+		tags: ["Kindle", "Reading Utility", "Email-to-e-book"],
 		color: "bg-orange-50",
 		schemaCategory: "UtilitiesApplication",
-		schemaFeature: "Email-to-e-book conversion",
 	},
 	{
 		title: "ESL Fiction",
-		category: "Content Discovery Engine",
+		category: "CEFR Level for Fiction",
 		description:
-			"Mobile-first, <b>Frictionless Access</b> PWA. Eliminating the friction of traditional passwords with secure, no-password OTP flows.",
+			"Determines the CEFR level of fiction works, helping readers find out the best edition for their language proficiency. <b>Free</b> to use, no sign-in required.",
 		link: "https://eslfiction.com",
-		tags: ["PWA", "Education", "No-Code DB"],
+		tags: ["CEFR Level", "Fiction Analysis", "Language Learning"],
 		color: "bg-green-50",
-		status: "Alpha",
+		status: "Beta",
 		schemaCategory: "EducationalApplication",
 	},
 ];
@@ -93,7 +90,7 @@ const products: Product[] = [
 								"@type": "SoftwareApplication",
 								name: product.title,
 								applicationCategory: product.schemaCategory || "WebApplication",
-								description: product.description.replace(/\<[^\>]*\>?/gm, ""),
+								description: product.description.replace(/<[^>]*>?/gm, ""),
 								operatingSystem: "Web",
 								featureList: product.schemaFeature
 									? [product.schemaFeature]
