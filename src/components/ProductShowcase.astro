@@ -74,7 +74,7 @@ const products: Product[] = [
 	{/* Masonry Layout using CSS Columns */}
 	<div class="columns-1 md:columns-2 gap-4 md:gap-6">
 		{
-			products.map((product) => {
+			products.reverse().map((product) => {
 				const isAlpha = product.status === "Alpha";
 				const Container = isAlpha ? "div" : "a";
 				const linkProps = isAlpha
