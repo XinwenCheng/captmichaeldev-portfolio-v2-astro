@@ -18,21 +18,21 @@
     "deploy": "yarn build && npx wrangler deploy"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^12.6.12",
-    "@astrojs/mdx": "^4.3.13",
+    "@astrojs/cloudflare": "^12.6.13",
+    "@astrojs/mdx": "^4.3.14",
     "@astrojs/react": "^4.4.2",
-    "@astrojs/sitemap": "^3.7.0",
+    "@astrojs/sitemap": "^3.7.2",
     "@fontsource/roboto-slab": "^5.2.8",
-    "@iconify-json/tabler": "^1.2.26",
+    "@iconify-json/tabler": "^1.2.33",
     "@resvg/resvg-wasm": "^2.6.2",
-    "@tailwindcss/vite": "^4.1.18",
-    "astro": "^5.17.2",
+    "@tailwindcss/vite": "^4.2.2",
+    "astro": "^5.18.1",
     "astro-icon": "^1.1.5",
-    "framer-motion": "^12.34.0",
+    "framer-motion": "^12.38.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "sass": "^1.97.3",
-    "satori": "^0.19.2",
+    "sass": "^1.99.0",
+    "satori": "^0.19.3",
     "satori-html": "^0.3.2",
     "tailwindcss": "^4.1.18"
   },
@@ -46,6 +46,6 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "prettier": "^3.8.1",
     "prettier-plugin-astro": "^0.13.0",
-    "wrangler": "^4.65.0"
+    "wrangler": "^4.80.0"
   }
 }
