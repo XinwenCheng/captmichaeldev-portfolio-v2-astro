@@ -74,7 +74,7 @@ export const GET: APIRoute = async () => {
 				<div
 					style="display: flex; font-size: 32px; color: #666; font-weight: 500;"
 				>
-					Solo Founder & Astro Developer
+					Solo Founder & Full Stack Developer
 				</div>
 			</div>
 

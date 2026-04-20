@@ -29,8 +29,8 @@
     "astro": "^5.18.1",
     "astro-icon": "^1.1.5",
     "framer-motion": "^12.38.0",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
     "sass": "^1.99.0",
     "satori": "^0.19.3",
     "satori-html": "^0.3.2",
@@ -44,8 +44,8 @@
     "eslint-plugin-astro": "^0.32.0",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^4.6.2",
-    "prettier": "^3.8.1",
+    "prettier": "^3.8.3",
     "prettier-plugin-astro": "^0.13.0",
-    "wrangler": "^4.80.0"
+    "wrangler": "^4.83.0"
   }
 }
